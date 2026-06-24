@@ -1,31 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><head>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard — Ecossistema Lasse's 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>const SUPABASE_URL = 'https://zfrnddemezohpsmkzgyf.supabase.co/rest/v1/';
-const SUPABASE_KEY = 'sb_publishable_WlxG83lB1mXIJrcWrmDIpA_WjjEUIZU';
-  async function testeSupabase() {
-  const { data, error } =
-    await supabaseClient
-      .from('content_pipeline')
-      .select('*');
-
-  console.log('Dados:', data);
-  console.log('Erro:', error);
-}
-
-testeSupabase();
-
-const supabaseClient = window.supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
-);
-
-console.log('Supabase conectado');
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
   :root {
     --blue: #1A3A6B; --blue-mid: #2E6DB4; --blue-light: #E8F0FA; --blue-pale: #F4F7FB;
@@ -37,9 +18,6 @@ console.log('Supabase conectado');
     --font: 'Segoe UI', Arial, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  <script>
-console.log("TESTE DASHBOARD");
-alert("TESTE DASHBOARD");
 </script> body { font-family: var(--font); font-size: 13px; color: var(--gray); background: #f0f2f5; min-height: 100vh; }
 
   .header { background: var(--blue); color: white; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
